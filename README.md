@@ -4,13 +4,14 @@ Conecta em uma base local mysql chamada "dados_b3"
 
 importa os dados fornecidos pela B3 no formato:
 
-"
+````
 RptDt;TckrSymb;UpdActn;GrssTradAmt;TradQty;NtryTm;TradId;TradgSsnId;TradDt
 2021-02-19;TF693;0;11,000;10;022946807;10;1;2021-02-19
-"
+````
 
 gravando em uma tabela no formato:
 
+````
 CREATE TABLE `trade_intraday` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `RptDt` date DEFAULT NULL,
@@ -24,3 +25,4 @@ CREATE TABLE `trade_intraday` (
   `TradDt` date DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 ;
+````
