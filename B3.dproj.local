@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2021/02/21 21:18:49.000.904,=C:\Users\rs_ze\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/02/21 21:20:51.000.167,C:\Users\rs_ze\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\dev\delphi\b3\untMain.pas</Transaction>
+    <Transaction>2021/02/21 21:20:51.000.167,C:\Users\rs_ze\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\dev\delphi\b3\untMain.dfm</Transaction>
+    <Transaction>2021/02/21 21:20:56.000.525,C:\Users\rs_ze\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\dev\delphi\b3\B3.dproj</Transaction>
+    <Transaction>2021/02/23 19:10:24.000.298,=C:\dev\delphi\b3\Unit1.pas</Transaction>
+    <Transaction>2021/02/23 19:12:10.000.987,C:\dev\delphi\b3\Unit1.dfm=C:\dev\delphi\b3\src\untDataModule.dfm</Transaction>
+    <Transaction>2021/02/23 19:12:10.000.987,C:\dev\delphi\b3\Unit1.pas=C:\dev\delphi\b3\src\untDataModule.pas</Transaction>
+    <Transaction>2021/02/23 19:19:27.000.358,=C:\dev\delphi\b3\Unit1.pas</Transaction>
+    <Transaction>2021/02/23 19:19:38.000.145,C:\dev\delphi\b3\Unit1.pas=C:\dev\delphi\b3\src\untFuncoes.pas</Transaction>
+    <Transaction>2021/02/23 19:25:41.000.646,=C:\dev\delphi\b3\Unit1.pas</Transaction>
+    <Transaction>2021/02/23 19:25:52.000.004,C:\dev\delphi\b3\Unit1.pas=C:\dev\delphi\b3\src\untTB3Import.pas</Transaction>
+    <Transaction>2021/02/23 19:39:18.000.421,C:\dev\delphi\b3\untMain.dfm=C:\dev\delphi\b3\src\untMain.dfm</Transaction>
+    <Transaction>2021/02/23 19:39:18.000.421,C:\dev\delphi\b3\untMain.pas=C:\dev\delphi\b3\src\untMain.pas</Transaction>
+  </Transactions>
+</BorlandProject>

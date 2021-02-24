@@ -1,0 +1,43 @@
+unit untTB3Import;
+
+interface
+
+type
+  TB3Import = class
+  public
+    procedure pGravarTradeIntraDay(const stlColunas: TStringList);
+  end;
+
+implementation
+
+uses Data.DB, FireDAC.Comp.Client;
+
+{ TB3Import }
+
+procedure TB3Import.pGravarTradeIntraDay(const stlColunas: TStringList);
+  var
+    qryDados : TFDQuery;
+begin
+  qryDados := TFDQuery.Create(Self);
+  try
+    qryDados.Connection := FDConnection1;
+    qryDados.SQL.Text := 'SELECT * FROM trade_intraday WHERE FALSE';
+    qryDados.Open;
+
+    qryDados.Insert;
+    qryDados.FieldByName('RptDt').AsDateTime := fEncodarData(stlColunas[0]);
+    qryDados.FieldByName('TckrSymb').AsString := stlColunas[1];
+    qryDados.FieldByName('UpdActn').AsString := stlColunas[2];
+    qryDados.FieldByName('GrssTradAmt').AsFloat := StrToFloat(stlColunas[3]);
+    qryDados.FieldByName('TradQty').AsFloat := StrToFloat(stlColunas[4]);
+    qryDados.FieldByName('NtryTm').AsString := stlColunas[5];
+    qryDados.FieldByName('TradId').AsString := stlColunas[6];
+    qryDados.FieldByName('TradgSsnId').AsString := stlColunas[7];
+    qryDados.FieldByName('TradDt').AsDateTime := fEncodarData(stlColunas[8]);
+    qryDados.Post;
+  finally
+    FreeAndNil(qryDados);
+  end;
+end;
+
+end.
