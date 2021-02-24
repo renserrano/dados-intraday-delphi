@@ -26,3 +26,5 @@ CREATE TABLE `trade_intraday` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 ;
 ````
+
+Mesmo projeto feito em Python ( Python version: 3.9.1, Tk version: 8.6.9, IDLE version: 3.9.1 ): https://github.com/renserrano/dados-intraday-python
